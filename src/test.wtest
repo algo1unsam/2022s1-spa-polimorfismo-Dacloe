@@ -12,7 +12,17 @@ test "Ramiro va al spa" {
 test "Olivia va al spa" {
 		
 	spa.atender(olivia)
-	assert.notThat(ramiro.comoEstaLaPiel())
-	assert.equals (0,ramiro.comoEstaLaContractura())
+	assert.that(olivia.banioDeVapor())
+	assert.equals (9,olivia.gradoDeConcentracion())
+	
+
+}
+
+test "Bruno va al spa" {
+		
+	spa.atender(bruno)
+	assert.that(bruno.felicidad())
+	assert.that(bruno.tieneSed())
+	assert.equals (54500,bruno.cuantoPesa())
 
 }

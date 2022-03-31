@@ -15,10 +15,9 @@ object olivia {
  	concentracion-= 1
  }
  
- method comoEstaLaConcentracion(){
- 	return concentracion
- }
-		
+method banioDeVapor(){
+	return true
+}		
 }
 
 //////
@@ -33,7 +32,7 @@ method masaje() {
 	feliz = true
 }
 
-method banioVapor(){
+method banioDeVapor(){
 	peso-= 500
 	sed=true
 }
@@ -57,6 +56,18 @@ method veElNoticiero(){
 
 method pesoIdeal(){
  return(peso>50000) and (peso<70000)	
+}
+
+method felicidad(){
+	return feliz
+}
+
+method cuantoPesa(){
+	return peso
+}
+
+method tieneSed(){
+	return sed
 }
 
 method estaPerfecto(){
