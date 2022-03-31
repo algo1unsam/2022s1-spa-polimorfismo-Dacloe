@@ -1,0 +1,18 @@
+import personas.*
+import spa.*
+
+test "Ramiro va al spa" {
+		
+	spa.atender(ramiro)
+	assert.notThat(ramiro.comoEstaLaPiel())
+	assert.equals (0,ramiro.comoEstaLaContractura())
+
+}
+
+test "Olivia va al spa" {
+		
+	spa.atender(olivia)
+	assert.notThat(ramiro.comoEstaLaPiel())
+	assert.equals (0,ramiro.comoEstaLaContractura())
+
+}
